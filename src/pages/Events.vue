@@ -40,6 +40,9 @@
           compteRendu
           type {
             name
+            illustration {
+              url
+            }
           }
         }
       }
@@ -60,11 +63,12 @@ export default {
         Layout,
         EventCard,
     },
+
     computed: {
         incomingEvents: function () {
             return this.$page.events.edges
                 .filter(event => moment(event.node.debut) >= moment())
-                .sort(function (a,b) { return  moment(a.node.debut) < moment(b.node.debut)} );
+                .sort(function (a,b) { return  moment(a.node.debut) > moment(b.node.debut)} );
 
         },
         pastEvents: function () {
@@ -73,6 +77,7 @@ export default {
                 .sort(function (a,b) { return  moment(a.node.debut) < moment(b.node.debut)} );
         }
     },
+
     filters: {
         formatDate: function(value) {
             moment.locale('fr')

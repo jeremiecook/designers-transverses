@@ -119,7 +119,7 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>35</strong>
+                                        <strong>{{allEvents}}</strong>
                                        <h3>Évènements et rendez-vous liés au design</h3>
                                         <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
 
@@ -146,6 +146,39 @@
         </div>
   </Layout>
 </template>
+
+<page-query>
+query {
+    events: allEvent {
+        edges {
+            node {
+                id
+            }
+        }
+    }
+}
+</page-query>
+
+
+
+<script>
+import Layout from "~/layouts/Default.vue";
+
+
+export default {
+    components: {
+        Layout,
+    },
+    computed: {
+        allEvents: function () {
+            return  this.$page.events.edges.length;
+        },
+    }
+};
+</script>
+
+
+
 
 <style>
 
@@ -256,13 +289,3 @@ section.community .kpi strong {
 
 
 
-<script>
-import Layout from "~/layouts/Default.vue";
-
-export default {
-  components: {
-    Layout,
-  },
-};
-
-</script>
