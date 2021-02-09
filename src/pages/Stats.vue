@@ -131,8 +131,8 @@
                                     </div>
                                     <div class="kpi">
                                         <strong>4.2</strong>
-                                        <h3>Indice de satisfaction</h3>
-                                        <p>Suite à l'évaluation de nos interventions</p>
+                                        <h3>Satisfaction des usagers</h3>
+                                        <p>Evaluation avec vox usagers</p>
                                     </div>
                                 </div>
                             </div>

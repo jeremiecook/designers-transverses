@@ -30,6 +30,9 @@
                          <a class="rf-link" href="/events" target="_self">Évènements</a>
                       </li>
                       <li class="rf-nav__item">
+                         <a class="rf-link" href="/guides" target="_self">Guides</a>
+                      </li>
+                      <li class="rf-nav__item">
                          <a class="rf-link" href="/stats" target="_self">Statistiques</a>
                       </li>
                    </ul>
@@ -100,6 +103,10 @@ body {
 .rf-footer {
     margin-top: 5em;
     border-top: 1px solid #F2F2F2;
+}
+
+.rf-nav {
+    box-shadow: none;
 }
 
 h2 {
