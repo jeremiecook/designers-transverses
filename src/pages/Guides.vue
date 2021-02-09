@@ -7,7 +7,7 @@
                 <h2>Guides pratiques</h2>
                 <div class="rf-grid-row rf-grid-row--gutters">
 
-                    <div class="rf-col-4">
+                    <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
                             <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
                             </div>
@@ -18,7 +18,7 @@
                          </g-link>
                     </div>
 
-                    <div class="rf-col-4">
+                    <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
                             <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
                             </div>
@@ -29,7 +29,7 @@
                          </g-link>
                     </div>
 
-                    <div class="rf-col-4">
+                    <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
                             <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
                             </div>

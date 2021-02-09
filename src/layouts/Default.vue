@@ -105,7 +105,7 @@ body {
     border-top: 1px solid #F2F2F2;
 }
 
-.rf-nav {
+.rf-header .rf-nav {
     box-shadow: none;
 }
 

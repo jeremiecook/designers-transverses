@@ -6,7 +6,7 @@
 
                 <h2>Évènements à venir</h2>
                 <div class="rf-grid-row rf-grid-row--gutters">
-                    <div class="rf-col-3" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
+                    <div class="rf-col-12 rf-col-md-3" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
                         <EventCard :event="edge.node" />
                     </div>
                 </div>
