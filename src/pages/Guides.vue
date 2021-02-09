@@ -9,7 +9,7 @@
 
                     <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/interview.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h4 class="rf-card__title">Les entretiens et tests utilisateurs</h4>
@@ -20,7 +20,7 @@
 
                     <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/accessibility.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h4 class="rf-card__title">L'accessibilité pour ma Start-up</h4>
@@ -31,7 +31,7 @@
 
                     <div class="rf-col-12 rf-col-md-4">
                         <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h4 class="rf-card__title">Recruter un designer</h4>
@@ -42,7 +42,7 @@
 
                     <div class="rf-col-4">
                         <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/design-system.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h4 class="rf-card__title">Le Design System de l'Etat</h4>
@@ -122,26 +122,26 @@ export default {
 
 
 <style>
-    .events {
-        display: table;
-        border-collapse: separate;
-        border-spacing: 1em;
+    .rf-card {
+        border-radius: 5px;
+        box-shadow: 0 2px 0 0 #EEE !important;
     }
 
-    .event {
-        display: table-row;
+    a {
+        box-shadow: none;
     }
 
-    .event > div {
-        display: table-cell;
+    .rf-card__img {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+
+        text-align:center;
     }
 
-    h4 {
-        display: inline-block;
-        margin: 0;
-        margin-right: 1em;
+    .rf-card__img::before {
+        padding-bottom: 70%;
     }
-
 
 </style>
 
