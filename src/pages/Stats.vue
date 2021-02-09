@@ -35,9 +35,9 @@
                                         <p>Depuis leur création jusqu'à aujourd'hui</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>4.2</strong>
-                                        <h3>Indice de satisfaction</h3>
-                                        <p>Suite à l'évaluation de nos interventions</p>
+                                          <strong>45%</strong>
+                                        <h3>De jeunes pousses accompagnées</h3>
+                                        <p>Start-ups en phase d'investigation ou de construction</p>
                                     </div>
                                 </div>
 
@@ -260,7 +260,7 @@ section.community .kpi strong {
     display: flex;
     flex-direction: column;
     margin: 1em;
-    max-width: 35%;
+    max-width: 36%;
     margin-right: 5%;
 }
 

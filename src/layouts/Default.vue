@@ -118,7 +118,7 @@ body {
 
 
 h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     text-align: left;
 }
 
