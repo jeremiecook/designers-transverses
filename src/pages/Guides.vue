@@ -7,54 +7,17 @@
                 <h2>Guides pratiques</h2>
                 <div class="rf-grid-row rf-grid-row--gutters">
 
-                    <div class="rf-col-12 rf-col-md-4">
-                        <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/interview.svg)'}">
+                    <div class="rf-col-12 rf-col-md-4" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
+                         <g-link class="rf-card" >
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(' + edge.node.illustration[0].url + ')'}">
                             </div>
                             <div class="rf-card__body">
-                                <h4 class="rf-card__title">Les entretiens et tests utilisateurs</h4>
-                                <p class="rf-card__desc">Comment et pourquoi concevoir un site ou une application accessible ? </p>
+                                <h4 class="rf-card__title">{{ edge.node.titre }}</h4>
+                                <p class="rf-card__desc">{{ edge.node.description }}</p>
                             </div>
                          </g-link>
                     </div>
-
-                    <div class="rf-col-12 rf-col-md-4">
-                        <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/accessibility.svg)'}">
-                            </div>
-                            <div class="rf-card__body">
-                                <h4 class="rf-card__title">L'accessibilité pour ma Start-up</h4>
-                                <p class="rf-card__desc">Comment et pourquoi concevoir un site ou une application accessible ? </p>
-                            </div>
-                         </g-link>
-                    </div>
-
-                    <div class="rf-col-12 rf-col-md-4">
-                        <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
-                            </div>
-                            <div class="rf-card__body">
-                                <h4 class="rf-card__title">Recruter un designer</h4>
-                                <p class="rf-card__desc">Comment peut-il m'aider, quel profil choisir, comment trouver la bonne personne ?</p>
-                            </div>
-                         </g-link>
-                    </div>
-
-                    <div class="rf-col-4">
-                        <g-link class="rf-card" >
-                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/design-system.svg)'}">
-                            </div>
-                            <div class="rf-card__body">
-                                <h4 class="rf-card__title">Le Design System de l'Etat</h4>
-                                <p class="rf-card__desc">Toutes les ressources pour mettre en place le Design System sur votre produit</p>
-                            </div>
-                         </g-link>
-                    </div>
-
-
                 </div>
-
-
 
             </div>
         </div>
@@ -62,25 +25,20 @@
 </template>
 
 <page-query>
-  query Events {
-    events: allEvent {
-      edges {
-        node {
-          id
-          sujet
-          pour
-          debut
-          compteRendu
-          type {
-            name
-            illustration {
-              url
+query Events {
+    events: allGuide {
+        edges {
+            node {
+                titre
+                description
+                lien
+                illustration {
+                    url
+                }
             }
-          }
         }
-      }
     }
-  }
+}
 </page-query>
 
 

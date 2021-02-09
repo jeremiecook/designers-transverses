@@ -7,6 +7,9 @@
 module.exports = {
     siteName: 'Designers transverses',
     plugins: [
+
+
+        // Évènements
         {
           use: '@gridsome/source-airtable',
           options: {
@@ -32,6 +35,24 @@ module.exports = {
             ],
           },
         },
+
+        // Guides
+        {
+          use: '@gridsome/source-airtable',
+          options: {
+            apiKey: 'keybQLCgbSWWJqps8',
+            base: 'app7SfpgBL8rbWw8V',
+            tables: [
+                {
+                    name: 'Guides', // required
+                    typeName: 'Guide', // required
+                    select: {},
+                    links: []
+                }
+            ],
+          },
+        },
+
     ],
 
     templates: {
