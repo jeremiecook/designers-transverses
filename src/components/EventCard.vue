@@ -1,6 +1,6 @@
 <template>
 
-    <g-link class="rf-card" :to="'events/' + event.id">
+    <g-link class="rf-card"> <!-- :to="'events/' + event.id" -->
         <div class="rf-card__img" :style="{ 'background-image': 'url(' + cover + ')'}">
             <p class="rf-tag">{{ event.type.name }}</p>
         </div>
